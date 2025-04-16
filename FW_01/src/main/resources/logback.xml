@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+
+<configuration>
+  <import class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"/>
+  <import class="ch.qos.logback.core.ConsoleAppender"/>
+
+  <appender name="STDOUT" class="ConsoleAppender">
+    <encoder class="PatternLayoutEncoder">
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+    </encoder>
+  </appender>
+
+
+
+  <import class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"/>
+  <import class="ch.qos.logback.core.rolling.RollingFileAppender"/>
+  <import class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"/>
+
+  <appender name="FILE" class="RollingFileAppender">
+    <file>logFile.log</file>
+    <rollingPolicy class="TimeBasedRollingPolicy">
+      <fileNamePattern>logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+      <totalSizeCap>3GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder class="PatternLayoutEncoder">
+      <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="trace">
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+</configuration>

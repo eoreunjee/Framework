@@ -1,0 +1,8 @@
+350  [main] TRACE com.ssafy.live.Calculator -- a: 10, b: 20, result: 30
+275  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
+290  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
+304  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
+307  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
+279  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
+303  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
+294  [main] TRACE com.ssafy.live.Calculater -- a: 10, b: 20, result: 30
