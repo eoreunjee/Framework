@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ssafy.live</groupId>
+  <artifactId>FW_01</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+		<dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>1.5.18</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api 
+		스코프 의존성.. 이 라이브러리는 어디에서 쓸 수 있는가? test영역에서 쓸 수 있다. 소프트웨어 배포시 필요한 곳에서만 쓰자는 의미!-->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>5.12.2</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- 스프링 설치 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>6.2.5</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>6.2.5</version>
+		    <scope>test</scope>
+		</dependency>
+				
+  </dependencies>
+</project>
